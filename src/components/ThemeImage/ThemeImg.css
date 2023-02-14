@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "myfont";
+    src: url('./font.woff') format('woff');
+}
+.imageOfTheme{
+    height: 28rem;
+    background-image: url('./food.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border:none;
+    border-bottom: darkgrey;
+}
+.tagLine{
+position: absolute;
+top: 26%;
+left: 15%;
+color: forestgreen;
+font-weight: 300;
+font-family: myfont;
+font-size: 70px;
+}
+@media only screen and (max-width: 900px) {
+.imageOfTheme {
+        height: 28rem;
+        background-image: url('./food.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 43rem;
+    }
+}

@@ -1,0 +1,45 @@
+
+.nav-link{
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+font-weight: 600;
+color: white;
+}
+
+.nav-link:hover {
+border-radius: 5px;
+ 
+font-weight: 900;
+}
+.bi.bi-cart{
+    font-size: 30px;
+   padding:0px 5px 0px 5px;
+   color: white;
+}
+.btnColor{
+    background-color: transparent;
+    border: none;
+}
+.btnColor:hover .bi.bi-cart{
+color: white;
+}
+.position-absolute.counterPos{
+  position: absolute;
+  top:13px
+}
+.bg-color{
+    background-color: rgb(59, 125, 59);
+    position: fixed;
+    width: 100%;
+}
+.btn.btn-outline-success{
+color: white;
+border-color: aliceblue;
+}
+.btn.btn-outline-success:hover{
+background-color: rgb(59, 224, 41);
+}
+.navbar-brand{
+    color: rgb(190, 164, 164);
+}
