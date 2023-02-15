@@ -30,7 +30,7 @@ export default function Navbar(props) {
                           </li>
                       </ul>
                     {/* starting of cart section */}
-                          <button type="button" className="btn btn-primary position-relative mx-3 btnColor">
+                          <button type="button" className="btn btn-primary position-relative mx-3 btnColor" >
                         <i className="bi bi-cart"></i>
                               <span className="position-absolute top-2 start-10 translate-middle badge rounded-pill bg-danger counterPos">
                                   {props.items}
