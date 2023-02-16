@@ -1,5 +1,5 @@
-import { Fooditems, Navbar, ThemeImg, data, CheckoutPage,initialData} from './components'
-import {useEffect, useState} from 'react'
+import { Fooditems, Navbar, ThemeImg, data, CheckoutPage} from './components'
+import {useState} from 'react'
 import Ordered from './components/Ordered/Ordered';
 
 
