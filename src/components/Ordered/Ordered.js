@@ -10,8 +10,10 @@ const Ordered = (props)=>{
             </>
         )
     }
+
 return(<>
-  {ReactDOM.createPortal(<Message/>,document.getElementById('ordered__root'))}
+
+   { ReactDOM.createPortal(<Message />, document.getElementById('ordered__root')) }
 </>)
 }
 export default Ordered

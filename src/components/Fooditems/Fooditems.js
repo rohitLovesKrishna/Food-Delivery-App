@@ -18,7 +18,7 @@ export default function Fooditems(props) {
                     </div>
                     <div className='counter'>
                         <span className='control-cart' id={item.id} onClick={props.subItems}>-</span>
-                        <span className='counter-inc' >{props.isOrder?0:item.qty}</span>
+                        <span className='counter-inc' >{item.qty}</span>
                         <span className='control-cart' id={item.id} onClick={props.addItems }>+</span>
                     </div>
                     <div className='price'>
