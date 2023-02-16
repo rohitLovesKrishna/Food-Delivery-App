@@ -1,0 +1,99 @@
+.backdrop{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+background-color: rgba(0, 0, 0, 0.85);
+}
+.overlay{
+    position: fixed;
+    background-color: aliceblue;
+    padding: 20px;
+border: 1px solid red;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+width: 70%;
+top: 15%;
+left: 14%;
+z-index: 10;
+}
+.orderDetailsBox{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.orderDetailsBox.qty{
+border: 1px solid red;
+padding: 1px 20px;
+background-color:thistle;
+    width: 10%;
+font-size:13px;
+}
+.performaOfCart{
+    display: flex;
+    justify-content: space-evenly;
+        align-items: center;
+}
+.orderDetailsBox.image{
+width: 5%;
+}
+.orderDetailsBox.image img {
+width: 100%;
+height: 5vh;
+}
+.orderDetailsBox.title {
+    font-weight: 900;
+    width: 10%;
+    margin-left: -20px;
+}
+.forScrollBar{
+    overflow-y: scroll;
+    height: 40vh;
+}
+.totalAmount{
+    width: 100%;
+    height: 10vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.totalAmount .amountToPaid{
+border: 1px solid red;
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.totalAmount .btns {
+border: 1px solid red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.totalAmount .closeBtn,.totalAmount .orderBtn{
+
+    background-color: red;
+padding: 5px 20px;
+border-radius: 10px;
+border: none;
+color: white;
+font-size: 18px;
+font-weight: 700;
+}
+.totalAmount .orderBtn {
+    background-color: lightgreen;
+}
+.totalAmount .closeBtn:active,.totalAmount .orderBtn:active {
+transform: scale(0.97);
+}
+.totalAmount .closeBtn:hover
+ {
+background-color: crimson;
+}
+.totalAmount .orderBtn:hover{
+    background-color:green;
+}

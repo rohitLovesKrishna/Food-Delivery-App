@@ -27,7 +27,7 @@ const increaseMe = (e)=>{
   }
   return (
   <>
-      {isCart && <CheckoutPage items={items} />}
+      {isCart && <CheckoutPage items={items} onClick={() => setIsCart(!isCart)}  data={foodItems}/>}
       <Navbar items={items} readyToBuy={() => setIsCart(!isCart)}/>
 <ThemeImg/>
       <Fooditems foodItems={foodItems}  addItems = {increaseMe} subItems={decreaseMe} />
