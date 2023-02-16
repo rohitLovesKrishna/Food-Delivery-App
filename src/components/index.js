@@ -4,4 +4,5 @@ export { default as ThemeImg } from './ThemeImage/ThemeImg'
 export { default as data } from './FoodData/FoodData'
 export { default as initialData } from './FoodData/FoodData'
 export { default as CheckoutPage } from './Modal/Checkout'
+export { default as Ordered } from './Ordered/Ordered'
 

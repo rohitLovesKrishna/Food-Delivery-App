@@ -1,6 +1,6 @@
-import { Fooditems, Navbar, ThemeImg, data, CheckoutPage} from './components'
+import { Fooditems, Navbar, ThemeImg, data, CheckoutPage, Ordered } from './components'
 import {useState} from 'react'
-import Ordered from './components/Ordered/Ordered';
+
 
 
 function App() {
