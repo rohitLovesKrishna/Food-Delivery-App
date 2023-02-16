@@ -13,7 +13,7 @@ const CheckoutPage = (props)=>{
     },[props.data]);
 
     const Backdrop = ()=>{
-        return <div className="backdrop"/>
+        return <div className="backdrop" onClick={props.onClick} />
     }
     const Overlay = ()=>{
         return (
@@ -49,8 +49,8 @@ const CheckoutPage = (props)=>{
                             <h5>Total Amount: Rs. {totalAmount}</h5>
                         </div>
                         <div className="btns">
-                            <button className="closeBtn">Close</button>
-                            <button className="orderBtn">Order</button>
+                            <button className="closeBtn" onClick={props.onClick}>Close</button>
+                            <button className="orderBtn" onClick={props.onConfirm}>Order</button>
                         </div>
                     </div>
             </div>

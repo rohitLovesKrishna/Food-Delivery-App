@@ -7,7 +7,15 @@ function App() {
 const [items,setItems] = useState(0);
   const [isCart, setIsCart] = useState(false);
 const [foodItems,setFoodItems] = useState(data);
+  const [isOrder, setIsOrder] = useState(false);
 
+  const thanksForOrder =()=>{
+    setIsCart(!isCart);
+    if(isCart){
+      setItems(0);
+      setIsOrder(!isOrder)
+    } 
+  }
 
 const increaseMe = (e)=>{
   setItems(items + 1)
@@ -27,10 +35,10 @@ const increaseMe = (e)=>{
   }
   return (
   <>
-      {isCart && <CheckoutPage items={items} onClick={() => setIsCart(!isCart)}  data={foodItems}/>}
+      {isCart && <CheckoutPage items={items} onClick={() => setIsCart(!isCart)} data={foodItems} onConfirm={thanksForOrder}/>}
       <Navbar items={items} readyToBuy={() => setIsCart(!isCart)}/>
 <ThemeImg/>
-      <Fooditems foodItems={foodItems}  addItems = {increaseMe} subItems={decreaseMe} />
+      <Fooditems foodItems={foodItems} addItems={increaseMe} subItems={decreaseMe} isOrder={isOrder} />
   </>
   );
 }
