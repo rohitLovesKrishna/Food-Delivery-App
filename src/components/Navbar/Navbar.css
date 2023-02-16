@@ -6,11 +6,13 @@
 font-weight: 600;
 color: white;
 }
-
 .nav-link:hover {
 border-radius: 5px;
  
 font-weight: 900;
+}
+.navbar.testing{
+    margin-top: -10px;
 }
 .bi.bi-cart{
     font-size: 30px;

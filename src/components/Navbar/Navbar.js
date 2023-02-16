@@ -3,7 +3,7 @@ import './Navbar.css'
 export default function Navbar(props) {
   return (
     <div>
-          <nav className="navbar navbar-expand-lg  bg-color">
+          <nav className="navbar navbar-expand-lg  bg-color testing">
               <div className="container-fluid">
               <h2 className="navbar-brand" >VrindaCart</h2>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@ export default function Navbar(props) {
                           </li>
                       </ul>
                     {/* starting of cart section */}
-                          <button type="button" className="btn btn-primary position-relative mx-3 btnColor" >
+                          <button type="button" className="btn btn-primary position-relative mx-3 btnColor" onClick={props.readyToBuy}>
                         <i className="bi bi-cart"></i>
                               <span className="position-absolute top-2 start-10 translate-middle badge rounded-pill bg-danger counterPos">
                                   {props.items}

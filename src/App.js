@@ -1,10 +1,11 @@
-import { Fooditems, Navbar, ThemeImg, data } from './components'
+import { Fooditems, Navbar, ThemeImg, data ,CheckoutPage} from './components'
 import {useState} from 'react'
 
 
 function App() {
 
 const [items,setItems] = useState(0);
+  const [isCart, setIsCart] = useState(false);
 const [foodItems,setFoodItems] = useState(data);
 
 
@@ -26,10 +27,10 @@ const increaseMe = (e)=>{
   }
   return (
   <>
-      
-      <Navbar items={items} />
+      {isCart && <CheckoutPage items={items} />}
+      <Navbar items={items} readyToBuy={() => setIsCart(!isCart)}/>
 <ThemeImg/>
-<Fooditems foodItems={foodItems}  addItems = {increaseMe} subItems={decreaseMe} />
+      <Fooditems foodItems={foodItems}  addItems = {increaseMe} subItems={decreaseMe} />
   </>
   );
 }
