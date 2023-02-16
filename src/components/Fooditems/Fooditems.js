@@ -14,7 +14,7 @@ export default function Fooditems(props) {
                 <div className='food-item' >
                     <div className='foodDetails'>
                         <img className='food-image' src={require(`${item.img}`)} alt={item.title} />
-                        <h2 className='food-title'>{item.title}</h2>
+                        <h4 className='food-title'>{item.title}</h4>
                     </div>
                     <div className='counter'>
                         <span className='control-cart' id={item.id} onClick={props.subItems}>-</span>

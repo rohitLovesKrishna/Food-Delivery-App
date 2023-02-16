@@ -46,6 +46,7 @@ box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 }
 .food-title{
     font-family: 'Times New Roman', Times, serif;
+    
 }
 .counter{
     display: flex;
