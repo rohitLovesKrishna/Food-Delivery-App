@@ -5,11 +5,12 @@ const CheckoutPage = (props)=>{
 
     const newData = props.data.filter((item)=>item.qty > 0);
     const [totalAmount, setTotalAmount] = useState(0);
+
     useEffect(()=>{
-       newData.forEach((val)=>{
+       props.data.forEach((val)=>{
             setTotalAmount(prev=>prev+=val.qty * val.amt)
         })
-    },[]);
+    },[props.data]);
 
     const Backdrop = ()=>{
         return <div className="backdrop"/>
@@ -36,7 +37,7 @@ const CheckoutPage = (props)=>{
                                 <div className="orderDetailsBox image" ><img src={require(`${item.img}`)} alt={item.title}/></div>
                                 <div className="orderDetailsBox title" >{item.title}</div>
                                 <div className="orderDetailsBox qty" >1*{item.qty}</div>
-                                <div className="orderDetailsBox amount">{item.qty * item.amt}</div>
+                                <div className="orderDetailsBox amount">Rs.{item.qty * item.amt}</div>
                         </div>
                             <hr style={{ border: '2px solid gray' }}  />
                     </>
@@ -45,7 +46,7 @@ const CheckoutPage = (props)=>{
                     </div>
                     <div className="totalAmount">
                         <div className="amountToPaid">
-                            <h3>Total Amount:{totalAmount}</h3>
+                            <h5>Total Amount: Rs. {totalAmount}</h5>
                         </div>
                         <div className="btns">
                             <button className="closeBtn">Close</button>
